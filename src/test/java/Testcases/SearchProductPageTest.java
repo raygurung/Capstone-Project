@@ -15,7 +15,7 @@ public class SearchProductPageTest {
 
     @BeforeTest
     public void launchBrowser() {
-        driver = SelectBrowser.StartBrowser("Chrome");
+        driver = SelectBrowser.StartBrowser("EdgeExplore");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
         driver.get("https://www.alexandnova.com/");
     }
