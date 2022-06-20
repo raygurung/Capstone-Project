@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite">
-    <test verbose="2" preserve-order="true" name="C:/Users/rayki/IdeaProjects/Gurung_Dhiraj_AlexandNova_CaseStudy">
+<suite name="Suite">
+    <test name="test1">
         <classes>
-            <class name="Testcases.Test">
-                <methods>
-                    <include name="shouldAnswerWithTrue"/>
-                </methods>
-            </class>
+            <class name="Testcases.RegistrationPageTest"/>
+            <class name="Testcases.AddToCartTest"/>
+            <class name="Testcases.GiftCardTest"/>
+            <class name="Testcases.LogInTest"/>
+            <class name="Testcases.SearchProductPageTest"/>
         </classes>
     </test>
 </suite>

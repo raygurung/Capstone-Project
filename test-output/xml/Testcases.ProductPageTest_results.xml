@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Gurung_Dhiraj_AlexandNova_CaseStudy"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="5.647">
+    <properties></properties>
+
+
+
+            <testcase
+                name="searchForProduct"
+                time="5.563"
+                classname="Testcases.SearchProductPageTest">
+            </testcase>
+            <testcase
+                name="blankSearch"
+                time="0.084"
+                classname="Testcases.SearchProductPageTest">
+            </testcase>
+</testsuite>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Gurung_Dhiraj_AlexandNova_CaseStudy"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="36.415">
+    <properties></properties>
+
+
+
+            <testcase
+                name="verifyProductPrices"
+                time="5.340"
+                classname="Testcases.AddToCartTest">
+            </testcase>
+            <testcase
+                name="addProductToCart"
+                time="31.075"
+                classname="Testcases.AddToCartTest">
+            </testcase>
+</testsuite>

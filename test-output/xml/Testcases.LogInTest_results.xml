@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Gurung_Dhiraj_AlexandNova_CaseStudy"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="15.528">
+    <properties></properties>
+
+
+
+            <testcase
+                name="invalidemailvalidpassword"
+                time="7.365"
+                classname="Testcases.LogInTest">
+            </testcase>
+            <testcase
+                name="loginwithvaliduserid"
+                time="8.163"
+                classname="Testcases.LogInTest">
+            </testcase>
+</testsuite>

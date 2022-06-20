@@ -1,6 +1,7 @@
 package Testcases;
 
 import Library.SelectBrowser;
+import Pages.RegistrationPage;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
@@ -9,12 +10,15 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
-
+import org.testng.annotations.Test;
 import java.time.Duration;
 
-public class Test {
+public class RegistrationPageTest {
 
     WebDriver driver;
+
+    RegistrationPage registrationPage;
+
 
     private static ExtentHtmlReporter htmlReporter;
     private static ExtentReports extent;
@@ -23,7 +27,7 @@ public class Test {
     @BeforeSuite
     public void setupReport() {
 
-        htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir") + "/test-output/GoogleReport.html");
+        htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir") + "/test-output/AlexandNovaReport.html");
         extent = new ExtentReports();
         extent.attachReporter(htmlReporter);
         extent.setSystemInfo("Host Name", " ray.home-server.local");
@@ -45,4 +49,52 @@ public class Test {
         driver.get("https://www.alexandnova.com/");
     }
 
+    @Test(priority = 1)
+
+
+
+        public void clickAccount() {
+        registrationPage = new RegistrationPage(driver);
+        registrationPage.clickAccount();
+    }
+        @Test(priority=2)
+
+        public void registerNewUser() throws InterruptedException {
+
+        registrationPage.clickonRegistration();
+        registrationPage.enterFirstName("Dhiraj");
+        registrationPage.enterLastName("Gurung");
+        registrationPage.enterEmail("ray23@gmail.com");
+        registrationPage.enterPassword("12345");
+        registrationPage.clickRegisterAgain();
+        Thread.sleep(3000);
+
+    }
+    @Test(priority = 3)
+    public void invalidLogin()
+
+    {
+        registrationPage.clickOnAccount();
+        registrationPage.inputemail("ray23@gmail.co");
+        registrationPage.inputpassword("12345");
+        registrationPage.pressloginfield();
+    }
+
+    @Test(priority = 4)
+    public void leaveBlank()
+
+    {
+        registrationPage.pressloginfield();
+    }
+
+    @Test(priority = 5)
+public void invalidpassword()
+    {
+        registrationPage.clickOnAccount();
+        registrationPage.inputemail("ray23@gmail.com");
+        registrationPage.inputpassword("23456352@@@@!");
+        registrationPage.pressloginfield();
+    }
+
 }
+
