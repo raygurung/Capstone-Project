@@ -8,6 +8,7 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -27,7 +28,7 @@ public class RegistrationPageTest {
     @BeforeSuite
     public void setupReport() {
 
-        htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir") + "/test-output/AlexandNovaReport.html");
+        htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir") + "/test-output/RegistrationReport.html");
         extent = new ExtentReports();
         extent.attachReporter(htmlReporter);
         extent.setSystemInfo("Host Name", " ray.home-server.local");
@@ -94,6 +95,12 @@ public void invalidpassword()
         registrationPage.inputemail("ray23@gmail.com");
         registrationPage.inputpassword("23456352@@@@!");
         registrationPage.pressloginfield();
+    }
+    @AfterSuite
+
+    public void tearDown()
+    {
+        extent.flush();
     }
 
 }

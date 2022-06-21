@@ -8,6 +8,7 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -15,11 +16,8 @@ import org.testng.annotations.Test;
 import java.time.Duration;
 
 public class LogInTest {
-
     WebDriver driver;
-
     RegistrationPage registrationPage;
-
 
     private static ExtentHtmlReporter htmlReporter;
     private static ExtentReports extent;
@@ -28,7 +26,7 @@ public class LogInTest {
     @BeforeSuite
     public void setupReport() {
 
-        htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir") + "/test-output/AlexandNovaReport.html");
+        htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir") + "/test-output/LoginReport.html");
         extent = new ExtentReports();
         extent.attachReporter(htmlReporter);
         extent.setSystemInfo("Host Name", " ray.home-server.local");
@@ -61,8 +59,6 @@ public class LogInTest {
         Thread.sleep(3000);
     }
 
-
-
     @Test(priority = 2)
     public void loginwithvaliduserid() throws InterruptedException {
         registrationPage = new RegistrationPage(driver);
@@ -73,6 +69,11 @@ public class LogInTest {
         registrationPage.pressloginfield();
         Thread.sleep(5000);
 
+    }
+    @AfterSuite
 
+    public void tearDown()
+    {
+        extent.flush();
     }
 }

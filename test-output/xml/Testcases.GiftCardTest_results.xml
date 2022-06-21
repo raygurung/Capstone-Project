@@ -4,14 +4,14 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="22.846">
+           time="34.188">
     <properties></properties>
 
 
 
             <testcase
                 name="giftcardinput"
-                time="22.846"
+                time="34.188"
                 classname="Testcases.GiftCardTest">
             </testcase>
 </testsuite>
