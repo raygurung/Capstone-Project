@@ -57,6 +57,7 @@ public class GiftCardTest {
         addToCartPage.inputgiftcardinfo("VT_RHBWJS6FMZ");
         Thread.sleep(3000);
         addToCartPage.clickonapplygiftcard();
+
     }
     @AfterSuite
     public void tearDown()

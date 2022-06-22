@@ -1,44 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="test6"
+<testsuite name="Gurung_Dhiraj_AlexandNova_CaseStudy"
            tests="2"
-           failures="1"
+           failures="0"
            errors="0"
            skipped="0"
-           time="27.546">
+           time="40.801">
     <properties></properties>
 
-            <testcase
-                name="filloutpayment"
-                time="10.552"
-                classname="Testcases.CheckOutTest">
-
-            <failure type="org.openqa.selenium.ElementClickInterceptedException" message="element click intercepted: Element &lt;span class=&quot;btn__content&quot; data-continue-button-content=&quot;true&quot;&gt;...&lt;/span&gt; is not clickable at point (496, 914). Other element would receive the click: &lt;svg class=&quot;icon-svg icon-svg--size-18 btn__spinner icon-svg--spinner-button&quot; aria-hidden=&quot;true&quot; focusable=&quot;false&quot;&gt;...&lt;/svg&gt;
-  (Session info: chrome=102.0.5005.115)
-Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
-System info: host: &apos;DESKTOP-M0LMLQD&apos;, ip: &apos;192.168.0.12&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ae3dc89dfa1906043aa4034abc27dd85, clickElement {id=62620709-c8df-426b-a8a7-ed294432b34d}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\rayki\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62649}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62649/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (ae3dc89dfa1906043aa4034abc27dd85)] -&gt; xpath: //span[contains(text(),&apos;Continue to shipping&apos;)]]
-Session ID: ae3dc89dfa1906043aa4034abc27dd85">
-                <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="btn__content" data-continue-button-content="true">...</span> is not clickable at point (496, 914). Other element would receive the click: <svg class="icon-svg icon-svg--size-18 btn__spinner icon-svg--spinner-button" aria-hidden="true" focusable="false">...</svg>
-  (Session info: chrome=102.0.5005.115)
-Build info: version: '4.0.0', revision: '3a21814679'
-System info: host: 'DESKTOP-M0LMLQD', ip: '192.168.0.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ae3dc89dfa1906043aa4034abc27dd85, clickElement {id=62620709-c8df-426b-a8a7-ed294432b34d}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\rayki\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62649}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62649/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (ae3dc89dfa1906043aa4034abc27dd85)] -> xpath: //span[contains(text(),'Continue to shipping')]]
-Session ID: ae3dc89dfa1906043aa4034abc27dd85
-                java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)Pages.CheckOutPage.paymentfilloutblank(CheckOutPage.java:45)Testcases.CheckOutTest.filloutpayment(CheckOutTest.java:62)java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)java.base/java.lang.reflect.Method.invoke(Method.java:566)org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)org.testng.internal.Invoker.invokeMethod(Invoker.java:583)org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)org.testng.TestRunner.privateRun(TestRunner.java:648)org.testng.TestRunner.run(TestRunner.java:505)org.testng.SuiteRunner.runTest(SuiteRunner.java:455)org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)org.testng.SuiteRunner.run(SuiteRunner.java:364)org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)org.testng.TestNG.runSuitesLocally(TestNG.java:1137)org.testng.TestNG.runSuites(TestNG.java:1049)org.testng.TestNG.run(TestNG.java:1017)com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-]]>
-            </failure>
-    </testcase>
 
 
             <testcase
                 name="givepaymentoption"
-                time="16.994"
+                time="17.912"
+                classname="Testcases.CheckOutTest">
+            </testcase>
+            <testcase
+                name="filloutpayment"
+                time="22.889"
                 classname="Testcases.CheckOutTest">
             </testcase>
 </testsuite>

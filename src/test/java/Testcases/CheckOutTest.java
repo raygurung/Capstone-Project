@@ -8,12 +8,17 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import java.io.File;
+import java.io.IOException;
 import java.time.Duration;
 
 public class CheckOutTest {
@@ -53,13 +58,25 @@ public class CheckOutTest {
     public void givepaymentoption() throws InterruptedException {
         checkOutPage =  new CheckOutPage(driver);
         checkOutPage.paymentsection();
+        Thread.sleep(3000);
+        checkOutPage.addtothecartoncheckout();
+        Thread.sleep(3000);
         checkOutPage.addcartcheckout();
+        Thread.sleep(3000);
     }
 
     @Test(priority = 2)
-    public void filloutpayment() throws InterruptedException {
-        Thread.sleep(3000);
+    public void filloutpayment() throws InterruptedException, IOException {
         checkOutPage.paymentfilloutblank();
+        Thread.sleep(3000);
+        checkOutPage.buttonforcontinue();
+        Thread.sleep(3000);
+        checkOutPage.restofaddress();
+        Thread.sleep(3000);
+        checkOutPage.paymentfinal();
+        Thread.sleep(3000);
+        File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        FileUtils.copyFile(file, new File("src/test/resources/screanShots/paymenterror.png"));
     }
 
     @AfterSuite
