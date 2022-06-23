@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Gurung_Dhiraj_AlexandNova_CaseStudy"
-           tests="1"
+<testsuite name="test3"
+           tests="2"
            failures="0"
            errors="0"
            skipped="0"
-           time="2.964">
+           time="11.036">
     <properties></properties>
 
 
 
             <testcase
-                name="openHomePage"
-                time="2.964"
+                name="blankSearch"
+                time="0.104"
+                classname="Testcases.SearchProductPageTest">
+            </testcase>
+            <testcase
+                name="searchForProduct"
+                time="10.932"
                 classname="Testcases.SearchProductPageTest">
             </testcase>
 </testsuite>

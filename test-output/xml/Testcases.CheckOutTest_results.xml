@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Gurung_Dhiraj_AlexandNova_CaseStudy"
+<testsuite name="test6"
            tests="2"
            failures="0"
            errors="0"
            skipped="0"
-           time="40.801">
+           time="53.847">
     <properties></properties>
 
 
 
             <testcase
                 name="givepaymentoption"
-                time="17.912"
+                time="27.231"
                 classname="Testcases.CheckOutTest">
             </testcase>
             <testcase
                 name="filloutpayment"
-                time="22.889"
+                time="26.616"
                 classname="Testcases.CheckOutTest">
             </testcase>
 </testsuite>

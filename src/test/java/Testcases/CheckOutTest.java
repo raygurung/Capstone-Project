@@ -56,6 +56,8 @@ public class CheckOutTest {
     }
     @Test(priority = 1)
     public void givepaymentoption() throws InterruptedException {
+        test = extent.createTest("give payment option", "Test Passed");
+
         checkOutPage =  new CheckOutPage(driver);
         checkOutPage.paymentsection();
         Thread.sleep(3000);
@@ -67,6 +69,8 @@ public class CheckOutTest {
 
     @Test(priority = 2)
     public void filloutpayment() throws InterruptedException, IOException {
+        test = extent.createTest("creditcard info testcase", "Test Passed");
+
         checkOutPage.paymentfilloutblank();
         Thread.sleep(3000);
         checkOutPage.buttonforcontinue();
@@ -77,6 +81,8 @@ public class CheckOutTest {
         Thread.sleep(3000);
         File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         FileUtils.copyFile(file, new File("src/test/resources/screanShots/paymenterror.png"));
+
+        driver.close();
     }
 
     @AfterSuite

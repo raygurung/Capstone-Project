@@ -46,6 +46,8 @@ public class GiftCardTest {
     }
     @Test(priority = 1)
     public void giftcardinput() throws InterruptedException {
+        test = extent.createTest("giftcard validation testcase", "Test Passed");
+
         addToCartPage=new AddToCartPage(driver);
         addToCartPage.clickonproduct();
         addToCartPage.productionDescription();
@@ -58,6 +60,7 @@ public class GiftCardTest {
         Thread.sleep(3000);
         addToCartPage.clickonapplygiftcard();
 
+        driver.close();
     }
     @AfterSuite
     public void tearDown()

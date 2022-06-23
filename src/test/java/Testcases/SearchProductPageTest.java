@@ -57,41 +57,31 @@ public class SearchProductPageTest {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
         driver.get("https://www.alexandnova.com/");
     }
-    @Test(enabled = false)
+    @Test(priority = 1)
     public void blankSearch()
 
     {
+        test = extent.createTest("blank product search", "Test Passed");
         productPage=new SearchProductPage(driver);
         productPage.clickSearch();
     }
-
-    @Test(enabled = false)
-            public void searchForProduct() throws IOException {
+    @Test(priority = 2)
+            public void searchForProduct() throws IOException, InterruptedException {
+        test = extent.createTest("search for product after the blank search has failed", "Test Passed");
         productPage.searchByProductName();
         productPage.clickSearch();
         Assert.assertEquals("BABY SHOES | Alex + Nova",driver.getTitle());
+        Thread.sleep(3000);
         File file = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-        FileUtils.copyFile(file,new File("src/test/resources/screanShots/.png"));
+        FileUtils.copyFile(file,new File("src/test/resources/screanShots/searchresult.png"));
 
-    }
-
-    @Test(enabled = true)
-    public void openHomePage() throws IOException {
-        homePage = new HomePage(driver);
-        homePage.goToHomePage();
-        String actualUrl = homePage.getcurrentUrl();
-        String expectedUrl = "https://www.alexandnova.com/";
-        Assert.assertEquals(actualUrl, expectedUrl);
-        File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-        FileUtils.copyFile(file, new File("src/test/resources/screanShots/Urlscreenshot.png"));
-
+        Thread.sleep(2000);
+        driver.close();
     }
     @AfterSuite
-
     public void tearDown()
     {
         extent.flush();
     }
-
 }
 

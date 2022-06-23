@@ -51,6 +51,8 @@ public class LogInTest {
 
     @Test(priority = 1)
     public void invalidemailvalidpassword() throws InterruptedException {
+        test = extent.createTest("invaidemail and valid passwordh", "Test Passed");
+
         registrationPage = new RegistrationPage(driver);
         registrationPage.clickOnAccount();
         registrationPage.inputemail("raja10@gmail.com");
@@ -61,6 +63,8 @@ public class LogInTest {
 
     @Test(priority = 2)
     public void loginwithvaliduserid() throws InterruptedException {
+        test = extent.createTest("valid user id testcase", "Test Passed");
+
         registrationPage = new RegistrationPage(driver);
 
         registrationPage.clickAccount();
@@ -68,6 +72,7 @@ public class LogInTest {
         registrationPage.inputpassword("12345");
         registrationPage.pressloginfield();
         Thread.sleep(5000);
+        driver.close();
 
     }
     @AfterSuite

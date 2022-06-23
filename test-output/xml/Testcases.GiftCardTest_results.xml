@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Gurung_Dhiraj_AlexandNova_CaseStudy"
+<testsuite name="test5"
            tests="1"
            failures="0"
            errors="0"
            skipped="0"
-           time="34.188">
+           time="26.128">
     <properties></properties>
 
 
 
             <testcase
                 name="giftcardinput"
-                time="34.188"
+                time="26.128"
                 classname="Testcases.GiftCardTest">
             </testcase>
 </testsuite>

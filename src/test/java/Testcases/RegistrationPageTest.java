@@ -61,8 +61,10 @@ public class RegistrationPageTest {
         @Test(priority=2)
 
         public void registerNewUser() throws InterruptedException {
+            test = extent.createTest("register new user", "Test Passed");
 
-        registrationPage.clickonRegistration();
+
+            registrationPage.clickonRegistration();
         registrationPage.enterFirstName("Dhiraj");
         registrationPage.enterLastName("Gurung");
         registrationPage.enterEmail("ray23@gmail.com");
@@ -75,6 +77,8 @@ public class RegistrationPageTest {
     public void invalidLogin()
 
     {
+        test = extent.createTest("wrong email account", "Test Passed");
+
         registrationPage.clickOnAccount();
         registrationPage.inputemail("ray23@gmail.co");
         registrationPage.inputpassword("12345");
@@ -91,10 +95,13 @@ public class RegistrationPageTest {
     @Test(priority = 5)
 public void invalidpassword()
     {
+        test = extent.createTest("right email wrong password", "Test Passed");
+
         registrationPage.clickOnAccount();
         registrationPage.inputemail("ray23@gmail.com");
         registrationPage.inputpassword("23456352@@@@!");
         registrationPage.pressloginfield();
+        driver.close();
     }
     @AfterSuite
 

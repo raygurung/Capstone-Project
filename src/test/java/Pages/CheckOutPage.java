@@ -49,23 +49,19 @@ public class CheckOutPage {
         driver.findElement(blackcolorbook).click();
 
     }
-
     public void addtothecartoncheckout() {
 
         driver.findElement(addcartbox).click();
     }
-
     public void addcartcheckout() {
 
         driver.findElement(topcartbox).click();
         driver.findElement(chckoutbox).click();
     }
-
     public void paymentfilloutblank() {
         driver.findElement(emailfieldcheckout).sendKeys("ray23@gmail.com");
 
     }
-
     public void buttonforcontinue() {
         driver.findElement(firstnamefield).sendKeys("Raja");
         driver.findElement(lastnamefield).sendKeys("Guru");
