@@ -109,6 +109,7 @@ public class AddToCartTest {
     public void tearDown()
     {
         extent.flush();
+
     }
 
 

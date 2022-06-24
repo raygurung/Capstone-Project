@@ -29,6 +29,8 @@ public class RegistrationPage {
 
     By loginfield = By.xpath("//body/div[@id='keyboard-nav-3']/div[2]/div[1]/form[1]/div[3]/input[1]");
 
+    By errorMessage = By.xpath("//p[contains(text(),'Sorry! Please try that again.')]");
+
     public RegistrationPage(WebDriver driver) {
         this.driver = driver;
     }
@@ -81,6 +83,12 @@ public class RegistrationPage {
     public void pressloginfield() {
         driver.findElement(loginfield).click();
     }
+
+    public String getErrorMessage()
+    {
+        return  driver.findElement(errorMessage).getText();
+    }
+
 
 
 }

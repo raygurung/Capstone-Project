@@ -8,10 +8,12 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+
 import java.time.Duration;
 
 public class RegistrationPageTest {
@@ -53,61 +55,79 @@ public class RegistrationPageTest {
     @Test(priority = 1)
 
 
-
-        public void clickAccount() {
+    public void clickAccount() {
         registrationPage = new RegistrationPage(driver);
         registrationPage.clickAccount();
     }
-        @Test(priority=2)
 
-        public void registerNewUser() throws InterruptedException {
-            test = extent.createTest("register new user", "Test Passed");
+    @Test(priority = 2)
 
-
-            registrationPage.clickonRegistration();
+    public void registerNewUser() throws InterruptedException {
+        test = extent.createTest("register new user", "Test Passed");
+        registrationPage.clickonRegistration();
         registrationPage.enterFirstName("Dhiraj");
         registrationPage.enterLastName("Gurung");
         registrationPage.enterEmail("ray23@gmail.com");
         registrationPage.enterPassword("12345");
         registrationPage.clickRegisterAgain();
-        Thread.sleep(3000);
+        Thread.sleep(10000);
+
 
     }
-    @Test(priority = 3)
-    public void invalidLogin()
 
-    {
+    @Test(priority = 3)
+    public void invalidLogin() throws InterruptedException {
         test = extent.createTest("wrong email account", "Test Passed");
 
         registrationPage.clickOnAccount();
         registrationPage.inputemail("ray23@gmail.co");
         registrationPage.inputpassword("12345");
         registrationPage.pressloginfield();
+        Thread.sleep(10000);
+
     }
 
     @Test(priority = 4)
-    public void leaveBlank()
 
-    {
+    public void leaveBlank() throws InterruptedException {
+        test = extent.createTest("Blank input", "Test Passed");
+        registrationPage.clickAccount();
         registrationPage.pressloginfield();
+        Thread.sleep(10000);
+
     }
 
     @Test(priority = 5)
-public void invalidpassword()
-    {
+    public void invalidpassword() throws InterruptedException {
         test = extent.createTest("right email wrong password", "Test Passed");
 
         registrationPage.clickOnAccount();
         registrationPage.inputemail("ray23@gmail.com");
         registrationPage.inputpassword("23456352@@@@!");
         registrationPage.pressloginfield();
-        driver.close();
+        Thread.sleep(8000);
+        String actualmessage = registrationPage.getErrorMessage();
+        String expected = "Sorry! Please try that again.";
+        Assert.assertEquals(expected, actualmessage);
+        registrationPage.getErrorMessage();
+        Thread.sleep(8000);
     }
+    @Test(priority=6)
+    public void validlogin() throws InterruptedException {
+        test = extent.createTest("Valid login with right credentials", "Test Passed");
+        registrationPage.clickOnAccount();
+        registrationPage.inputemail("ray23@gmail.com");
+        registrationPage.inputpassword("12345");
+        registrationPage.pressloginfield();
+        Thread.sleep(10000);
+
+    }
+
     @AfterSuite
 
-    public void tearDown()
-    {
+    public void tearDown() {
         extent.flush();
+        driver.close();
     }
 
 }

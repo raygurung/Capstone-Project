@@ -22,7 +22,6 @@ import java.io.IOException;
 import java.time.Duration;
 
 public class CheckOutTest {
-
     WebDriver driver;
     CheckOutPage checkOutPage;
     AddToCartTest addToCartTest;
@@ -90,6 +89,7 @@ public class CheckOutTest {
     public void tearDown()
     {
         extent.flush();
+
     }
 
 }

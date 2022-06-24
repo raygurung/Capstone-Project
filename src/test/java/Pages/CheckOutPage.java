@@ -6,15 +6,11 @@ import org.openqa.selenium.WebDriver;
 public class CheckOutPage {
     WebDriver driver;
 
-
     By shopboxfield = By.xpath("//a[@id='navigation-shop']");
-
     By colorbook = By.linkText("Color Recognition Early Education Cloth Book");
-
     By blackcolorbook = By.xpath("//label[contains(text(),'Black')]");
 
     By addcartbox = By.xpath("//body[1]/div[3]/div[1]/section[1]/div[1]/div[2]/div[1]/form[1]/div[4]/input[1]");
-
     By topcartbox = By.xpath("//header/div[1]/div[1]/div[2]/div[2]/a[1]");
 
     By chckoutbox = By.xpath("//span[contains(text(),'Checkout')]");
@@ -81,8 +77,6 @@ public class CheckOutPage {
             driver.findElement(continuetopaymentfield).click();
             driver.findElement(paynowfield).click();
         }
-
-
     }
 
 

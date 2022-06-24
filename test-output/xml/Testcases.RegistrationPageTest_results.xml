@@ -1,37 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="test1"
-           tests="5"
-           failures="0"
+<testsuite name="Gurung_Dhiraj_AlexandNova_CaseStudy"
+           tests="6"
+           failures="3"
            errors="0"
            skipped="0"
-           time="26.449">
+           time="42.653">
     <properties></properties>
 
+            <testcase
+                name="leaveBlank"
+                time="1.210"
+                classname="Testcases.RegistrationPageTest">
+
+            <failure type="org.openqa.selenium.ElementClickInterceptedException" message="element click intercepted: Element &lt;a href=&quot;/account/login&quot; id=&quot;customer_login_link&quot; data-open-accessibility-text-original=&quot;16px&quot; class=&quot;navigable&quot; style=&quot;font-size: 16px;&quot;&gt;...&lt;/a&gt; is not clickable at point (1276, 23). Other element would receive the click: &lt;div style=&quot;width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=102.0.5005.115)
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-M0LMLQD&apos;, ip: &apos;192.168.0.12&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b9a73ed27dc9948654cabf6cb80ec990, clickElement {id=e8a356d4-b325-4085-baf0-52a7dd6af7df}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\rayki\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57014}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57014/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (b9a73ed27dc9948654cabf6cb80ec990)] -&gt; id: customer_login_link]
+Session ID: b9a73ed27dc9948654cabf6cb80ec990">
+                <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="/account/login" id="customer_login_link" data-open-accessibility-text-original="16px" class="navigable" style="font-size: 16px;">...</a> is not clickable at point (1276, 23). Other element would receive the click: <div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;"></div>
+  (Session info: chrome=102.0.5005.115)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-M0LMLQD', ip: '192.168.0.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b9a73ed27dc9948654cabf6cb80ec990, clickElement {id=e8a356d4-b325-4085-baf0-52a7dd6af7df}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\rayki\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57014}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57014/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (b9a73ed27dc9948654cabf6cb80ec990)] -> id: customer_login_link]
+Session ID: b9a73ed27dc9948654cabf6cb80ec990
+                java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)Pages.RegistrationPage.clickAccount(RegistrationPage.java:40)Testcases.RegistrationPageTest.leaveBlank(RegistrationPageTest.java:94)java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)java.base/java.lang.reflect.Method.invoke(Method.java:566)org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)org.testng.internal.Invoker.invokeMethod(Invoker.java:583)org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)org.testng.TestRunner.privateRun(TestRunner.java:648)org.testng.TestRunner.run(TestRunner.java:505)org.testng.SuiteRunner.runTest(SuiteRunner.java:455)org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)org.testng.SuiteRunner.run(SuiteRunner.java:364)org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)org.testng.TestNG.runSuitesLocally(TestNG.java:1137)org.testng.TestNG.runSuites(TestNG.java:1049)org.testng.TestNG.run(TestNG.java:1017)com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+            </failure>
+    </testcase>
+            <testcase
+                name="invalidpassword"
+                time="1.106"
+                classname="Testcases.RegistrationPageTest">
+
+            <failure type="org.openqa.selenium.ElementClickInterceptedException" message="element click intercepted: Element &lt;a href=&quot;/account/login&quot; id=&quot;customer_login_link&quot; data-open-accessibility-text-original=&quot;16px&quot; class=&quot;navigable&quot; style=&quot;font-size: 16px;&quot;&gt;...&lt;/a&gt; is not clickable at point (1276, 23). Other element would receive the click: &lt;div style=&quot;width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=102.0.5005.115)
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-M0LMLQD&apos;, ip: &apos;192.168.0.12&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b9a73ed27dc9948654cabf6cb80ec990, clickElement {id=e8a356d4-b325-4085-baf0-52a7dd6af7df}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\rayki\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57014}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57014/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (b9a73ed27dc9948654cabf6cb80ec990)] -&gt; xpath: //header/div[1]/div[1]/div[2]/div[1]/a[1]]
+Session ID: b9a73ed27dc9948654cabf6cb80ec990">
+                <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="/account/login" id="customer_login_link" data-open-accessibility-text-original="16px" class="navigable" style="font-size: 16px;">...</a> is not clickable at point (1276, 23). Other element would receive the click: <div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;"></div>
+  (Session info: chrome=102.0.5005.115)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-M0LMLQD', ip: '192.168.0.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b9a73ed27dc9948654cabf6cb80ec990, clickElement {id=e8a356d4-b325-4085-baf0-52a7dd6af7df}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\rayki\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57014}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57014/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (b9a73ed27dc9948654cabf6cb80ec990)] -> xpath: //header/div[1]/div[1]/div[2]/div[1]/a[1]]
+Session ID: b9a73ed27dc9948654cabf6cb80ec990
+                java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)Pages.RegistrationPage.clickOnAccount(RegistrationPage.java:71)Testcases.RegistrationPageTest.invalidpassword(RegistrationPageTest.java:104)java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)java.base/java.lang.reflect.Method.invoke(Method.java:566)org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)org.testng.internal.Invoker.invokeMethod(Invoker.java:583)org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)org.testng.TestRunner.privateRun(TestRunner.java:648)org.testng.TestRunner.run(TestRunner.java:505)org.testng.SuiteRunner.runTest(SuiteRunner.java:455)org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)org.testng.SuiteRunner.run(SuiteRunner.java:364)org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)org.testng.TestNG.runSuitesLocally(TestNG.java:1137)org.testng.TestNG.runSuites(TestNG.java:1049)org.testng.TestNG.run(TestNG.java:1017)com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+            </failure>
+    </testcase>
+            <testcase
+                name="validlogin"
+                time="1.086"
+                classname="Testcases.RegistrationPageTest">
+
+            <failure type="org.openqa.selenium.ElementClickInterceptedException" message="element click intercepted: Element &lt;a href=&quot;/account/login&quot; id=&quot;customer_login_link&quot; data-open-accessibility-text-original=&quot;16px&quot; class=&quot;navigable&quot; style=&quot;font-size: 16px;&quot;&gt;...&lt;/a&gt; is not clickable at point (1276, 23). Other element would receive the click: &lt;div style=&quot;width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=102.0.5005.115)
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-M0LMLQD&apos;, ip: &apos;192.168.0.12&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b9a73ed27dc9948654cabf6cb80ec990, clickElement {id=e8a356d4-b325-4085-baf0-52a7dd6af7df}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\rayki\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57014}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57014/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (b9a73ed27dc9948654cabf6cb80ec990)] -&gt; xpath: //header/div[1]/div[1]/div[2]/div[1]/a[1]]
+Session ID: b9a73ed27dc9948654cabf6cb80ec990">
+                <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="/account/login" id="customer_login_link" data-open-accessibility-text-original="16px" class="navigable" style="font-size: 16px;">...</a> is not clickable at point (1276, 23). Other element would receive the click: <div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;"></div>
+  (Session info: chrome=102.0.5005.115)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-M0LMLQD', ip: '192.168.0.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b9a73ed27dc9948654cabf6cb80ec990, clickElement {id=e8a356d4-b325-4085-baf0-52a7dd6af7df}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\rayki\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57014}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57014/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (b9a73ed27dc9948654cabf6cb80ec990)] -> xpath: //header/div[1]/div[1]/div[2]/div[1]/a[1]]
+Session ID: b9a73ed27dc9948654cabf6cb80ec990
+                java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)Pages.RegistrationPage.clickOnAccount(RegistrationPage.java:71)Testcases.RegistrationPageTest.validlogin(RegistrationPageTest.java:118)java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)java.base/java.lang.reflect.Method.invoke(Method.java:566)org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)org.testng.internal.Invoker.invokeMethod(Invoker.java:583)org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)org.testng.TestRunner.privateRun(TestRunner.java:648)org.testng.TestRunner.run(TestRunner.java:505)org.testng.SuiteRunner.runTest(SuiteRunner.java:455)org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)org.testng.SuiteRunner.run(SuiteRunner.java:364)org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)org.testng.TestNG.runSuitesLocally(TestNG.java:1137)org.testng.TestNG.runSuites(TestNG.java:1049)org.testng.TestNG.run(TestNG.java:1017)com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+            </failure>
+    </testcase>
 
 
             <testcase
-                name="clickAccount"
-                time="0.862"
+                name="invalidLogin"
+                time="23.091"
                 classname="Testcases.RegistrationPageTest">
             </testcase>
             <testcase
                 name="registerNewUser"
-                time="13.196"
+                time="16.059"
                 classname="Testcases.RegistrationPageTest">
             </testcase>
             <testcase
-                name="invalidLogin"
-                time="8.486"
-                classname="Testcases.RegistrationPageTest">
-            </testcase>
-            <testcase
-                name="leaveBlank"
-                time="0.111"
-                classname="Testcases.RegistrationPageTest">
-            </testcase>
-            <testcase
-                name="invalidpassword"
-                time="3.794"
+                name="clickAccount"
+                time="0.101"
                 classname="Testcases.RegistrationPageTest">
             </testcase>
 </testsuite>
